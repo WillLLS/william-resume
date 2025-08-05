@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, Github, ExternalLink, Briefcase, User, GraduationCap } from "lucide-react";
+import { ArrowLeft, ExternalLink, Briefcase, User, GraduationCap } from "lucide-react";
 
 export default function TechnicalDetails() {
   return (

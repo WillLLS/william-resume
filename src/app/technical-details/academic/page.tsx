@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, ExternalLink, Calendar, Users, Target, Heart, Lightbulb, Recycle, Shield, GraduationCap } from "lucide-react";
+import { ArrowLeft, ExternalLink, Users, GraduationCap } from "lucide-react";
 
 export default function AcademicProjects() {
   const projects = [
@@ -145,7 +145,7 @@ export default function AcademicProjects() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid gap-6">
-            {projects.map((project, index) => (
+            {projects.map((project) => (
               <div key={project.id} className="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="p-6">
                   <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">

@@ -53,7 +53,7 @@ export default function FacebookBot() {
                   Created a comprehensive Facebook automation bot using Python and Selenium to automate various social media activities including friend requests, group interactions, page management, and content engagement while maintaining authentic user behavior.
                 </p>
                 <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
-                  The system included advanced features for group posting, friend management, automated responses, and social network analysis, all designed to operate safely within Facebook's terms of service.
+                  The system included advanced features for group posting, friend management, automated responses, and social network analysis, all designed to operate safely within Facebook&apos;s terms of service.
                 </p>
               </div>
             </div>
@@ -242,7 +242,7 @@ export default function FacebookBot() {
                     <ul className="space-y-2 text-slate-600 dark:text-slate-300">
                       <li className="flex items-start gap-2">
                         <span className="text-yellow-500 mt-1">•</span>
-                        <span>Facebook's complex anti-automation systems</span>
+                        <span>Facebook&apos;s complex anti-automation systems</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-yellow-500 mt-1">•</span>

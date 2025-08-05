@@ -53,7 +53,7 @@ export default function InstagramBot() {
                   Developed a comprehensive Instagram automation bot using Python and Selenium to automate social media interactions while maintaining human-like behavior patterns. The system was designed to grow follower base organically through strategic engagement.
                 </p>
                 <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
-                  The bot included advanced features like targeted audience interaction, automated posting, story viewing, and comprehensive analytics tracking, all while avoiding Instagram's anti-bot detection systems.
+                  The bot included advanced features like targeted audience interaction, automated posting, story viewing, and comprehensive analytics tracking, all while avoiding Instagram&apos;s anti-bot detection systems.
                 </p>
               </div>
             </div>
@@ -242,7 +242,7 @@ export default function InstagramBot() {
                     <ul className="space-y-2 text-slate-600 dark:text-slate-300">
                       <li className="flex items-start gap-2">
                         <span className="text-yellow-500 mt-1">•</span>
-                        <span>Instagram's sophisticated bot detection</span>
+                        <span>Instagram&apos;s sophisticated bot detection</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-yellow-500 mt-1">•</span>
@@ -293,7 +293,7 @@ export default function InstagramBot() {
                 <div className="border-l-4 border-green-500 pl-4">
                   <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Activity Limits</h3>
                   <p className="text-slate-600 dark:text-slate-300">
-                    Built-in daily and hourly limits for all actions (follows, likes, comments) to stay within Instagram's acceptable usage patterns.
+                    Built-in daily and hourly limits for all actions (follows, likes, comments) to stay within Instagram&apos;s acceptable usage patterns.
                   </p>
                 </div>
                 <div className="border-l-4 border-blue-500 pl-4">

@@ -170,7 +170,7 @@ export default function Pix2VoxMLModel() {
                 <div className="border-l-4 border-red-500 pl-4">
                   <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Performance Analysis & Iteration</h3>
                   <p className="text-slate-600 dark:text-slate-300">
-                    Gained valuable experience in model evaluation and identifying areas for improvement when results don't meet production requirements.
+                    Gained valuable experience in model evaluation and identifying areas for improvement when results don&apos;t meet production requirements.
                   </p>
                 </div>
               </div>

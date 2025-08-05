@@ -50,10 +50,10 @@ export default function SmartLampLinky() {
               </h2>
               <div className="bg-amber-50 dark:bg-amber-900/20 rounded-lg p-6">
                 <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
-                  Developed an innovative smart lighting system that interfaces with France's national smart electricity grid through Linky smart meters. The system automatically adjusts lighting based on real-time energy consumption data and electricity pricing.
+                  Developed an innovative smart lighting system that interfaces with France&apos;s national smart electricity grid through Linky smart meters. The system automatically adjusts lighting based on real-time energy consumption data and electricity pricing.
                 </p>
                 <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
-                  This academic project demonstrates the integration of IoT devices with national infrastructure, showcasing energy management, automated lighting control, and smart grid communication protocols.
+                                  The Smart Lamp Linky project demonstrates France&apos;s commitment to smart grid technology
                 </p>
               </div>
             </div>
@@ -184,7 +184,7 @@ export default function SmartLampLinky() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 dark:text-white mb-1">TIC Protocol Connection</h3>
-                    <p className="text-slate-600 dark:text-slate-300">Direct connection to Linky meter's Télé-Information Client interface</p>
+                    <p className="text-slate-600 dark:text-slate-300">Direct connection to Linky meter&apos;s Télé-Information Client interface</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
