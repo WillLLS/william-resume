@@ -1,0 +1,204 @@
+Projects, Responsibilities & Achievements  
+Symphony 3D – Internship + CDI
+
+Context: End-to-end solution for 3D prints custom-made hearing aids
+
+Project: Training a machine-learning model named Pix2Vox to generate voxels from images
+Responsibility: The entire project (Working alone on it)
+
+Work done: 
+ 	Understanding the model
+	Model based on auto-encoder
+ 	Generate images from different angles for the data augmentation from stl files
+ 	Training the model on multiple epochs for reaching the best results
+ 	Modifying the architecture to reach a better voxel resolution (from 32x32x32 to 128x128x128)
+
+Results achieved:
+ 	Results are not enough precise to be used (~60% during the testing loop)
+
+
+
+Project: Creating an IoT Solution to fully control by distance an SLA 3D Printer
+Responsibility: The entire project (Working alone on it)
+
+Work done: 
+ 	Understanding how works the 3D printer
+	Discover that this printer is controllable in local Wi-Fi
+	Asking the warehouse for the documentation 
+	Reverse engineering using Wireshark (Due to mistakes in the documentation) 
+ 	Start developing an electronic PoC based on an ESP32
+	Need to add sensors for future needs: Humidity & Temperature, Limit switch sensor (for the door), NFC Readers, Led for states visualization
+	Proposition of the MQTT Protocol to avoid the client having to do port forwarding
+o	Creation of the commands with the back-end team
+	Implementation of the Protocol for each functionality of the printer
+o	Send Files 
+o	Start / Stop / Pause
+o	Heartbeat to know the state of the printer 
+	OAT implementation to change through internet the firmware
+
+ 	Same kind of solution for the post-production machines.
+	Using already working machine
+	Reverse engineering
+	Control with MQTT Protocol
+
+
+Results achieved:
+ 	First PoC after 1 months
+ 	Changing the file delivery solution to accelerate the file uploading system (Using MQTT and HTTP protocol)
+ 	Adding a solution using EEPROM to allow the recognition of the platform 
+ 	Modifying the communication protocol to control the printer due to a new version from the constructor
+
+
+Technical environment
+Technologies:	Mqtt, WiFi, NFC, C
+Tools:	RabbitMQ, EasyEDA, Fusion 360, WireShark
+
+Project: Developing a new generation of jetting 3D printer
+Responsibility: The entire project (Working alone on it)
+
+Work done:  
+ 	Reading & understanding the documentation of a 2D ink printhead
+	Implementation of all the functionalities to control it
+o	Ignition sequence
+o	Power supply
+o	Ink supply (pressure system) (for resin instead of ink)
+o	Control of the nozzles 
+	Creation of an electronic card to easily control the 2D printhead with an ESP32
+ 	Using an already working 3D PLA Printer with an open-source mother board
+	Learning the G-Code to control the 3D printer
+	Implementation inside the 3D printer
+o	Of the 2D Printhead
+o	Of a resin supply system
+o	Of a UV light to solidify the resin 
+ 	Creation of a Slicer
+	From a 3D file (.STL format)
+o	Generation of a G-Code file (based on the number of slices)
+o	Generation of a specific file for the 2D Printhead to eject drops of resin
+ 
+
+Results achieved:
+ 	The entire system was working after 3 months
+ 	First 3D impressions were done easily
+ 	The next step was to add others printhead to mix different resins but due to a lack of time, not implemented
+
+
+
+Technical environment
+Technologies:	C, Python, G-Code
+Tools:	EasyEDA, Fusion 360, VS-Code, 3D printer…
+
+
+Project: Electroplating on 3D printed pieces (in PLA)
+Responsibility: The entire project (Working alone on it)
+
+Work done: 
+ 	Studying the electrochemical reaction to deposit Copper and Nickel on 3D Printed pieces
+	Make the 3D printed piece conductive (Adding carbon paint)
+	Use the electrolyse to deposit copper and nickel on the surface
+
+
+
+
+Project: Creation of electronic circuits with 3D SLA printer
+Responsibility: The entire project (Working alone on it)
+
+Work done: 
+ 	The goal was to produce a simple electronic card to create fast prototype (For the Jetting project)
+	Using a 3D SLA printer
+o	Creating a mask with the 3D Printer 
+	Chemical etching with iron chloride solution
+
+
+SENSIVIC - Internship
+
+Context: Due to the shortage of semiconductors, the company needs to change their microcontroller, from STM to ESP32
+Project: Developing a solution based on ESP32 to create an acoustic antenna 
+Responsibility: Full responsibility of the project
+Goal: Sampling 4 microphones at 100 kHz to localize in the space the origin of a sound.
+
+Work done:
+ 	Starting to use the ADC on simple microphone
+	Due to the number of microphones that must work simultaneously, introduction to the DMA.
+ 	Implementation using MEMS (micro-electromechanical systems) for having a frequency around 100kHz
+
+Results achieved:
+ 	PoC at the end of the 2 months internship
+
+
+Technical environment
+Technologies:	C, MEMS, i2s protocol
+Tools:	ESP-IDF
+
+
+
+School projects
+ 
+Context: Semester project 
+Project: Retirement home, following the heartbeat and respiration rhythm without contact with the patient during the sleep
+Responsibility: Head of the project
+
+Work done:
+ 	Task attribution to the group
+ 	Embedded part
+o	Communication with a specific sensor that allow to measure the heartbeat & respiration at 2 meters of distance
+	UART communication
+o	Sending back the collected data through Wi-Fi to an local server
+	Using MQTT protocol
+
+Context: Semester project 
+Project: A modulable object in collaboration with school art students 
+Responsibility: Head of the project
+
+Work done: 
+ 	Proposition of the project
+o	Lamp connected (wireless) to the “Linky” of the user (Allow to know the electric consumption of the home)
+ 	API research about the linky
+o	Using a tierce server (needed a legal entity to build a personal API and access the user’s data)
+ 	Embedded part
+o	Communication to the API with an ESP32 
+o	Controlling motor to modify the location of the lamp depending on the daily consumption. (The more you consume, the less you see the lamp) 
+
+ 
+Project: Creating a ransomware
+Responsibility: Practice project
+
+Work done: 
+ 	Coding the script that encrypt all the txt file on a computer and collect them on the attacking’s VPS. 
+ 	Sending a message to the user to inform him about this and asking for a ransom to get the key to unlock every files
+
+
+Project: Connected compost bin, Semester project
+Responsibility: Head of the project
+
+Work done: 
+ 	Embedded part
+o	Implementing all the sensors (humidity, gas, temperature, …)
+o	Sending all the data through LoRa-WAN
+ 	Creating a LoRa node to collect the data on Raspberry Pi
+
+Personal Projects 
+
+Telegram Bot + Hosting – Crypto Trending (TON Network) (t.me/hunton_live)
+• Telegram Bot + Hosting – Notification for the product availability
+• Telegram Bot + Hosting – Client Service
+• Telegram Bot + Hosting – Collect all the tweet of several account an repost them on a specific channel
+
+• Scrapping website – Beautiful Soup OR Selenium OR puppeteer (Node JS)
+
+• Custom made WebSite + Hosting for locksmith company (laserrurerie76.fr)
+
+• Connected Table (Controlled through WiFi Led – Control Spotify (using the API) with Buttons, Printing on LCD Screen the Spotify state OR Humidity & Temperature) 
+-> Custom-made electronic board – Custom-made 3D Printed Box
+
+• Automatic Bot to control an Instagram Profile (2 versions: 
+-Browser automation
+-Reverse engineering and manipulation of the http requests)
+
+• Automatic Bot to scrap Facebook and Post a specific post on specific groups
+
+• WebSite Resume (willlls.github.io)
+
+• Android App for RepairShoes Service Shop: Sending Semi-automatic message to the customer based on the multiple services provided by the shop
+
+• Task manager – First project: Task manager using Arduino and 3d printer. Gestion of domestic tasks
+

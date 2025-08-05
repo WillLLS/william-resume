@@ -1,0 +1,72 @@
+William Lalis  
+Embedded Systems & IoT Engineer | Python | C/C++ | SaaS-Oriented Mindset  
+Based in Hamburg, Germany | French & EU citizen | Open to relocation or remote  
+GitHub: github.com/willLLS | Email: lalis.william@gmail.com | Phone: +33 7 69 65 24 10  
+
+PROFILE  
+French embedded systems engineer with a solid background in C/C++, Python, and IoT development.  
+Passionate about building software and hardware interfaces, with professional experience in firmware development, API integration, and prototyping.  
+Looking for a full-time opportunity in Hamburg (or remote) within a company that develops and markets SaaS products, to grow both technically and strategically.  
+
+SKILLS  
+
+Embedded Systems & IoT:  
+• Embedded Firmware Development (ESP-IDF, C/C++)  
+• Real-Time Operating Systems (FreeRTOS)  
+• IoT Sensor Integration (ESP32, Raspberry Pi, peripherals)  
+• Low-Power Wireless Communication (LoRa, Wi-Fi, BLE)  
+
+Programming & Scripting:  
+• Languages: C, C++, Python, HTML/CSS/JS, SQL, Bash  
+• Web Scraping & Automation: Selenium, BeautifulSoup, Scrapy  
+• Machine Learning: PyTorch, R  
+• API Development & Consumption: RESTful APIs  
+
+Web & Server Management:  
+• Web Servers: Nginx, Gunicorn, Flask, Systemd  
+• VPS & Linux Server Administration  
+
+CAD & Tools:  
+• Fusion 360, EasyEDA (PCB Design), 3D Printing Maintenance & Calibration  
+• Version Control: Git, GitHub  
+
+PROFESSIONAL EXPERIENCE  
+
+R&D&I Engineer – SYMPHONY 3D  
+2023 – 2024 | Full-time  
+• Led end-to-end development of embedded IoT solutions, from hardware integration to firmware deployment (ESP32, FreeRTOS)  
+• Designed and deployed reliable server communication protocols for remote 3D printer control  
+• Engineered a novel proof-of-concept for jetting-based 3D printing, enabling micro-precision material deposition  
+• Built robust pipelines for sensor data acquisition and preprocessing to train custom deep learning models (PyTorch)  
+
+R&D Engineer Intern – SENSIVIC  
+2022  
+• Developed real-time embedded firmware for high-frequency acoustic detection systems using ESP32 and C++  
+
+Consultant – Technicatome  
+2024 – Coordination & Development missions  
+• Coordinated technical support operations: prioritized tickets, optimized planning, and improved SLA performance  
+• Developed a secure Python API for automated software signing using a Hardware Security Module (HSM)  
+• Integrated HSM-based signature workflows into CI/CD pipelines for high-assurance software deployment  
+
+EDUCATION  
+
+Master of Science – Internet of Things (Data Science)  
+École de l’IoT – Orléans, France | 2023  
+
+Engineering Degree – Embedded Systems & Applied Physics  
+Polytech Orléans – France | 2023  
+
+Erasmus+ – Computer Science  
+Università degli Studi dell’Aquila – Italy | 2022  
+
+CPGE – Classe Prépa PC*  
+Lycée Victor Hugo – Caen, France | 2020  
+
+French Baccalauréat – Physics & Chemistry, Music (Honors)  
+Lycée Guillaume le Conquérant – France | 2017  
+
+LANGUAGES  
+• French – Native  
+• English – Fluent (C1)  
+
