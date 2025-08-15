@@ -8,6 +8,7 @@ import { useState } from "react";
 export default function Home() {
   const { t } = useLanguage();
   const [showVideoModal, setShowVideoModal] = useState(false);
+  const videoUrl = process.env.NEXT_PUBLIC_VIDEO_URL || "https://cxosyrfortrbqfy5.public.blob.vercel-storage.com/ad_iot.mp4";
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800">
@@ -438,10 +439,27 @@ export default function Home() {
                 <video
                   controls
                   className="w-full h-full"
-                  autoPlay
+                  preload="metadata"
+                  poster=""
+                  onError={(e) => {
+                    console.error('Video failed to load:', e);
+                    console.error('Current URL:', window.location.href);
+                    console.error('Video src:', videoUrl);
+                  }}
+                  onLoadStart={() => {
+                    console.log('Video load started');
+                  }}
+                  onCanPlayThrough={() => {
+                    console.log('Video can play through');
+                  }}
                 >
-                  <source src="/ad_iot.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
+                  <source src={videoUrl} type="video/mp4" />
+                  <p className="text-white text-center p-4">
+                    Votre navigateur ne supporte pas la lecture de vidéos HTML5. 
+                    <a href={videoUrl} className="text-blue-400 underline" download>
+                      Télécharger la vidéo
+                    </a>
+                  </p>
                 </video>
               </div>
             </div>
