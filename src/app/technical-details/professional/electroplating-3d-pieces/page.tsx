@@ -1,7 +1,27 @@
+"use client";
+
 import Link from "next/link";
-import { ArrowLeft, Calendar, Building2, Target, Wrench, CheckCircle, Lightbulb, Cpu } from "lucide-react";
+import { ArrowLeft, Calendar, Building2, Target, Wrench, CheckCircle, Lightbulb, Cpu, ChevronLeft, ChevronRight } from "lucide-react";
+import { useState } from "react";
 
 export default function ElectroplatingProject() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  const carouselImages = [
+    "/electroplating_1.jpg",
+    "/electroplating_2.jpg", 
+    "/electroplating_3.jpg",
+    "/electroplating_4.jpg",
+    "/electroplating_5.jpg"
+  ];
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % carouselImages.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + carouselImages.length) % carouselImages.length);
+  };
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800">
       {/* Navigation */}
@@ -33,6 +53,100 @@ export default function ElectroplatingProject() {
             <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
               Electrochemical process development for depositing copper and nickel on PLA 3D printed components for enhanced surface treatment of hearing aid parts
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Project Image */}
+      <section className="py-12">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden">
+            <img 
+              src="/galvanoplastie.png" 
+              alt="Electroplating process on 3D printed components"
+              className="w-full h-64 md:h-80 object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">Electroplating Process Overview</h3>
+              <p className="text-slate-600 dark:text-slate-300">Complete electrochemical process for copper and nickel deposition on PLA 3D printed hearing aid components</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Interactive Photo Gallery */}
+      <section className="py-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-8 text-center">Photo Gallery - Different Angles</h2>
+          
+          {/* Main Carousel */}
+          <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8 mb-8">
+            <div className="relative max-w-2xl mx-auto">
+              {/* Main Image */}
+              <div className="relative group">
+                <img 
+                  src={carouselImages[currentImageIndex]}
+                  alt={`Electroplated piece - View ${currentImageIndex + 1}`}
+                  className="w-full h-96 object-cover object-center rounded-lg shadow-md aspect-square"
+                />
+                
+                {/* Navigation Arrows */}
+                <button 
+                  onClick={prevImage}
+                  className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 text-white p-3 rounded-full transition-all duration-200 opacity-0 group-hover:opacity-100"
+                >
+                  <ChevronLeft className="w-6 h-6" />
+                </button>
+                
+                <button 
+                  onClick={nextImage}
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 text-white p-3 rounded-full transition-all duration-200 opacity-0 group-hover:opacity-100"
+                >
+                  <ChevronRight className="w-6 h-6" />
+                </button>
+                
+                {/* Simple Counter */}
+                <div className="absolute top-4 right-4">
+                  <span className="bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">
+                    {currentImageIndex + 1} / {carouselImages.length}
+                  </span>
+                </div>
+              </div>
+              
+              {/* Thumbnail Navigation */}
+              <div className="flex justify-center mt-6 space-x-4 overflow-x-auto pb-2">
+                {carouselImages.map((image, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImageIndex(index)}
+                    className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 transition-all duration-200 ${
+                      index === currentImageIndex 
+                        ? 'border-blue-500 ring-2 ring-blue-200 scale-105' 
+                        : 'border-gray-300 dark:border-gray-600 hover:border-gray-400 hover:scale-102'
+                    }`}
+                  >
+                    <img 
+                      src={image}
+                      alt={`View ${index + 1}`}
+                      className="w-full h-full object-cover object-center aspect-square"
+                    />
+                  </button>
+                ))}
+              </div>
+              
+              {/* Progress Indicators */}
+              <div className="flex justify-center mt-4 space-x-2">
+                {carouselImages.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImageIndex(index)}
+                    className={`h-2 w-8 rounded-full transition-all duration-200 ${
+                      index === currentImageIndex ? 'bg-blue-500' : 'bg-gray-300 dark:bg-gray-600 hover:bg-gray-400'
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>

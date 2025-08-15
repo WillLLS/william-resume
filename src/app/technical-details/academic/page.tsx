@@ -21,12 +21,7 @@ export default function AcademicProjects() {
         "2-meter range contactless vital signs detection",
         "Real-time data transmission to local server",
         "MQTT protocol integration for reliable communication",
-        "Complete team project delivery on schedule"
-      ],
-      technicalDetails: [
-        "UART communication with specialized health sensors",
-        "WiFi data transmission to monitoring station",
-        "Real-time processing of biometric data",
+        "Complete team project delivery on schedule",
         "Alert system for abnormal readings"
       ],
       slug: "retirement-monitoring"
@@ -70,8 +65,7 @@ export default function AcademicProjects() {
       educationalGoals: [
         "Understanding malware attack vectors",
         "Learning encryption/decryption processes",
-        "Studying network communication patterns",
-        "Developing defensive strategies"
+        "Studying network communication patterns"
       ],
       implementation: [
         "File encryption targeting specific extensions",

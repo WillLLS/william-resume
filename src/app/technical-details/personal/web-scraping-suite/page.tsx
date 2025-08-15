@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, Calendar, User, Target, Wrench, CheckCircle, Lightbulb, Globe, Code } from "lucide-react";
+import { ArrowLeft, Calendar, User, Target, Wrench, Lightbulb, Globe, Code } from "lucide-react";
 
 export default function WebScraping() {
   return (
@@ -159,37 +159,6 @@ export default function WebScraping() {
                     <h3 className="font-semibold text-green-800 dark:text-green-200 mb-2">News & Content Sites</h3>
                     <p className="text-green-700 dark:text-green-300">Article extraction and content aggregation</p>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Results & Achievements */}
-            <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-3">
-                <CheckCircle className="w-6 h-6 text-green-600" />
-                Results & Performance
-              </h2>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="text-center">
-                  <div className="bg-green-100 dark:bg-green-900/30 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-green-600">10K+</span>
-                  </div>
-                  <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Records Extracted</h3>
-                  <p className="text-slate-600 dark:text-slate-300">Daily data extraction capacity</p>
-                </div>
-                <div className="text-center">
-                  <div className="bg-blue-100 dark:bg-blue-900/30 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-blue-600">99%</span>
-                  </div>
-                  <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Success Rate</h3>
-                  <p className="text-slate-600 dark:text-slate-300">Data extraction accuracy</p>
-                </div>
-                <div className="text-center">
-                  <div className="bg-purple-100 dark:bg-purple-900/30 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-purple-600">24/7</span>
-                  </div>
-                  <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Continuous Operation</h3>
-                  <p className="text-slate-600 dark:text-slate-300">Automated monitoring</p>
                 </div>
               </div>
             </div>

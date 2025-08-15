@@ -1,0 +1,402 @@
+{
+  "projects": {
+    "professional": [
+      {
+        "id": "iot-3d-printer",
+        "title": "IoT Connected 3D Printer Control Solution",
+        "company": "Symphony 3D",
+        "period": "2024",
+        "description": "Complete IoT solution to remotely control an SLA 3D printer with reverse engineering, MQTT protocol, and comprehensive sensor integration",
+        "context": "End-to-end solution for 3D prints custom-made hearing aids",
+        "technologies": ["ESP32", "C/C++", "MQTT", "WiFi", "NFC", "Wireshark", "RabbitMQ"],
+        "achievements": [
+          "Reverse engineered 3D printer protocols using Wireshark",
+          "Implemented MQTT protocol for remote control",
+          "First PoC delivered after 1 month",
+          "Added sensors: humidity, temperature, limit switches, NFC readers"
+        ],
+        "slug": "iot-3d-printer",
+        "note": "Vérifié."
+      },
+      {
+        "id": "pix2vox-ml-model",
+        "title": "Pix2Vox Machine Learning Model Training",
+        "company": "Symphony 3D",
+        "period": "2024",
+        "description": "Training and optimizing a machine learning model to generate 3D voxels from 2D images using auto-encoder architecture",
+        "context": "3D reconstruction for custom-made hearing aids manufacturing",
+        "technologies": ["Python", "Machine Learning", "Auto-encoder", "Data Augmentation", "STL Processing"],
+        "achievements": [
+          "Improved voxel resolution from 32³ to 128³",
+          "Implemented data augmentation from STL files",
+          "Generated multi-angle training images",
+          "Achieved 60% accuracy in testing phase"
+        ],
+        "slug": "pix2vox-ml-model",
+        "note": "Vérifié."
+      },
+      {
+        "id": "jetting-3d-printer",
+        "title": "Next-Generation Jetting 3D Printer Development",
+        "company": "Symphony 3D",
+        "period": "2024",
+        "description": "Complete development of innovative jetting 3D printer using 2D ink printhead technology for resin-based printing",
+        "context": "Revolutionary printing technology for high-precision 3D manufacturing",
+        "technologies": ["C/C++", "Python", "G-Code", "ESP32", "Electronics Design", "3D Printing"],
+        "achievements": [
+          "Full system operational after 3 months",
+          "Successfully integrated 2D printhead with 3D printer",
+          "Created custom slicer for STL to G-Code conversion",
+          "Implemented resin supply and UV curing system"
+        ],
+        "slug": "jetting-3d-printer",
+        "images": [
+          "public/global_view_jetting_printer.jpg",
+          "public/printhead_view.jpg",
+          "public/printed_result_view.jpg"
+        ],
+        "note": "Vérifié."
+      },
+      {
+        "id": "electroplating-3d-pieces",
+        "title": "Electroplating on 3D Printed Pieces",
+        "company": "Symphony 3D",
+        "period": "2024",
+        "description": "Electrochemical process development for depositing copper and nickel on PLA 3D printed components",
+        "context": "Surface treatment enhancement for 3D printed hearing aid components",
+        "technologies": ["Electrochemistry", "PLA Processing", "Copper Plating", "Nickel Plating", "Surface Treatment"],
+        "achievements": [
+          "Successfully made PLA pieces conductive with carbon paint",
+          "Implemented copper and nickel electroplating process",
+          "Mastered electrochemical reaction control",
+          "Achieved consistent surface coating quality"
+        ],
+        "slug": "electroplating-3d-pieces",
+        "images": {
+            "main_image": "public/galvanoplastie.png",
+            "carousselle": [
+                "public/electroplating_1.jpg",
+                "public/electroplating_2.jpg",
+                "public/electroplating_3.jpg",
+                "public/electroplating_4.jpg",
+                "public/electroplating_5.jpg"
+            ]
+        },
+        "note": "Vérifié."
+      },
+      {
+        "id": "sla-electronic-circuits",
+        "title": "Electronic Circuit Creation with 3D SLA Printer",
+        "company": "Symphony 3D",
+        "period": "2024",
+        "description": "Fast prototyping solution for electronic circuits using 3D SLA printer and chemical etching techniques",
+        "context": "Rapid prototyping support for jetting 3D printer project",
+        "technologies": ["3D SLA Printing", "Chemical Etching", "Iron Chloride", "PCB Design", "Rapid Prototyping"],
+        "achievements": [
+          "Created precise masks with 3D SLA printer",
+          "Mastered chemical etching with iron chloride",
+          "Achieved fast prototype production cycle",
+          "Supported jetting printer development with custom PCBs"
+        ],
+        "slug": "sla-electronic-circuits",
+        "note": "Vérifié"
+      },
+      {
+        "id": "esp32-acoustic-antenna",
+        "title": "ESP32 Acoustic Antenna System",
+        "company": "SENSIVIC",
+        "period": "2023",
+        "description": "Advanced acoustic localization system using ESP32 and 4 microphones sampling at 100kHz for sound source positioning",
+        "context": "Semiconductor shortage solution - migration from STM to ESP32 microcontroller",
+        "technologies": ["ESP32", "C/C++", "MEMS", "i2s Protocol", "DMA", "ESP-IDF"],
+        "achievements": [
+          "Successfully implemented 4-microphone simultaneous sampling",
+          "Achieved 100kHz sampling frequency with MEMS",
+          "Mastered DMA for high-frequency data processing",
+          "Delivered functional PoC in 2 months"
+        ],
+        "slug": "esp32-acoustic-antenna",
+        "note": "Vérifié"
+      }
+    ],
+    "academic": [
+      {
+        "id": "retirement-monitoring",
+        "title": "Contactless Health Monitoring System",
+        "period": "Semester Project",
+        "type": "Team Leader",
+        "description": "Non-contact heartbeat and respiration monitoring system for retirement homes during sleep",
+        "context": "Healthcare IoT solution for elderly care facilities",
+        "technologies": ["ESP32", "UART", "WiFi", "MQTT", "Specialized Sensors", "C/C++"],
+        "responsibilities": [
+          "Project leadership and team coordination",
+          "Task distribution and timeline management",
+          "Embedded systems development",
+          "Communication protocol implementation"
+        ],
+        "achievements": [
+          "2-meter range contactless vital signs detection",
+          "Real-time data transmission to local server",
+          "MQTT protocol integration for reliable communication",
+          "Complete team project delivery on schedule",
+          "Alert system for abnormal readings"
+        ],
+        "slug": "retirement-monitoring",
+        "note": "Vérifié"
+      },
+      {
+        "id": "smart-lamp-linky",
+        "title": "Energy-Aware Connected Lamp",
+        "period": "Semester Project",
+        "type": "Team Leader & Project Initiator",
+        "description": "Modular connected lamp responding to home energy consumption via French Linky smart meter integration",
+        "context": "Collaboration with art school students for aesthetic and functional design",
+        "technologies": ["ESP32", "Linky API", "Servo Motors", "WiFi", "Third-party APIs", "C/C++"],
+        "concept": "Visual representation of energy consumption - higher consumption dims the lamp visibility",
+        "responsibilities": [
+          "Project concept development and proposal",
+          "Technical architecture design",
+          "API research and integration",
+          "Cross-disciplinary team coordination"
+        ],
+        "achievements": [
+          "Successful Linky smart meter API integration",
+          "Motor-controlled lamp positioning system",
+          "Real-time energy consumption visualization",
+          "Artistic collaboration with design students"
+        ],
+        "challenges": [
+          "Legal entity requirement for Linky API access",
+          "Third-party server integration complexity",
+          "Mechanical design for smooth lamp movement"
+        ],
+        "slug": "smart-lamp-linky",
+        "note": "Vérifié."
+      },
+      {
+        "id": "ransomware-education",
+        "title": "Educational Ransomware Development",
+        "period": "Cybersecurity Course",
+        "type": "Individual Practice Project",
+        "description": "Ethical hacking exercise to understand ransomware mechanics and defense strategies",
+        "context": "Cybersecurity education and awareness training",
+        "technologies": ["Python", "Encryption", "File System", "VPS Hosting", "Networking"],
+        "educationalGoals": [
+          "Understanding malware attack vectors",
+          "Learning encryption/decryption processes",
+          "Studying network communication patterns"
+        ],
+        "implementation": [
+          "File encryption targeting specific extensions",
+          "Secure key generation and storage",
+          "Network communication with command server",
+          "User notification and recovery procedures"
+        ],
+        "ethicalNote": "This was a controlled educational exercise in a sandboxed environment for learning cybersecurity defense mechanisms.",
+        "slug": "ransomware-education",
+        "note": "Vérifié."
+      },
+      {
+        "id": "smart-compost",
+        "title": "IoT Connected Compost Bin",
+        "period": "Semester Project",
+        "type": "Team Leader",
+        "description": "Smart composting system with environmental monitoring and LoRa-WAN connectivity",
+        "context": "Sustainable technology and environmental monitoring solution",
+        "technologies": ["ESP32", "LoRa-WAN", "Raspberry Pi", "Environmental Sensors", "C/C++", "Python"],
+        "sensorSuite": [
+          "Humidity monitoring for optimal composting",
+          "Gas sensors for decomposition tracking",
+          "Temperature measurement",
+          "pH level monitoring",
+          "Motion detection for maintenance alerts"
+        ],
+        "achievements": [
+          "Complete sensor integration and calibration",
+          "LoRa-WAN long-range communication implementation",
+          "Raspberry Pi data collection node setup",
+          "Real-time environmental monitoring dashboard"
+        ],
+        "networkArchitecture": [
+          "LoRa sensor nodes in compost bins",
+          "Raspberry Pi gateway for data aggregation",
+          "Cloud dashboard for remote monitoring",
+          "Alert system for maintenance needs"
+        ],
+        "slug": "smart-compost",
+        "note": "Vérifié."
+      }
+    ],
+    "personal": [
+      {
+        "id": "telegram-crypto-bot",
+        "title": "Telegram Cryptocurrency Bot (TON Network)",
+        "period": "2024",
+        "description": "Telegram bot for crypto trending on TON Network with hosting and real-time market notifications. Allowing the user to buy a trending place automaticaly from a second bot. All the paiment processus in cryptocurrency was automatic, even the refund system.",
+        "technologies": ["Python", "Telegram API", "TON Network", "Cryptocurrency APIs", "Hosting", "Real-time Data"],
+        "achievements": [
+          "Successfully deployed on TON Network",
+          "Real-time crypto trending notifications",
+          "Integrated with multiple crypto data sources",
+          "Active bot: t.me/hunton_live"
+        ],
+        "url": "https://t.me/hunton_live",
+        "slug": "telegram-crypto-bot",
+        "images": [
+            "public/hunton_project_list_trending.jpg",
+            "public/hunton_project_trending.jpg"
+        ],
+        "note": "Vérifié."
+      },
+      {
+        "id": "web-scraping-suite",
+        "title": "Advanced Web Scraping Suite",
+        "period": "2024",
+        "description": "Comprehensive web scraping framework using Beautiful Soup, Selenium, and Puppeteer for diverse data extraction needs",
+        "technologies": ["Python", "Beautiful Soup", "Selenium", "Node.js", "Puppeteer", "Data Processing"],
+        "achievements": [
+          "Multi-technology scraping approach",
+          "Browser automation with Selenium",
+          "JavaScript rendering with Puppeteer",
+          "Robust data extraction pipeline"
+        ],
+        "slug": "web-scraping-suite",
+        "note": "Vérifié."
+      },
+      {
+        "id": "locksmith-website",
+        "title": "Custom Locksmith Company Website",
+        "period": "2024",
+        "description": "Complete custom website development and hosting solution for a professional locksmith company",
+        "technologies": ["Web Development", "HTML/CSS", "Bootstrap", "JavaScript", "Hosting", "Domain Management"],
+        "achievements": [
+          "Full custom website design and development",
+          "Professional hosting setup",
+          "SEO optimization for local business",
+          "Live website: laserrurerie76.fr"
+        ],
+        "url": "https://laserrurerie76.fr",
+        "slug": "locksmith-website",
+        "note": "Vérifié."
+      },
+      {
+        "id": "connected-table",
+        "title": "IoT Connected Smart Table",
+        "period": "2024",
+        "description": "Smart interactive table with WiFi-controlled LEDs, Spotify integration, and environmental monitoring display",
+        "technologies": ["ESP32", "Arduino", "WiFi", "Spotify API", "LCD Display", "LED Control", "3D Printing"],
+        "achievements": [
+          "Custom electronic board design",
+          "Spotify API integration with physical buttons",
+          "Real-time humidity & temperature display",
+          "Custom 3D printed enclosure"
+        ],
+        "slug": "connected-table",
+        "note": "Vérifié."
+      },
+      {
+        "id": "instagram-automation",
+        "title": "Instagram Profile Automation Bot",
+        "period": "2024",
+        "description": "Dual-approach Instagram automation system using browser automation and HTTP request manipulation. Automatique content creation and publication.",
+        "technologies": ["Python", "Browser Automation", "HTTP Requests", "Reverse Engineering", "Instagram API"],
+        "achievements": [
+          "Two distinct automation approaches implemented",
+          "Browser automation for complex interactions",
+          "HTTP request reverse engineering",
+          "Automated profile management and engagement"
+        ],
+        "slug": "instagram-automation",
+        "images": "public/astro_content.jpg",
+        "note": "Vérifié."
+      },
+      {
+        "id": "facebook-scraping-bot",
+        "title": "Facebook Group Posting Automation",
+        "period": "2023",
+        "link": "https://www.facebook.com/DeProverbeEnCitationOfficiel?locale=fr_FR",
+        "description": "Automated bot for scraping Facebook content and posting to specific groups with intelligent content distribution",
+        "technologies": ["Python", "Web Scraping", "Facebook Automation", "Content Management", "Group Targeting"],
+        "achievements": [
+          "Automated Facebook content scraping",
+          "Intelligent group targeting system",
+          "Content filtering and distribution",
+          "Automated posting scheduling"
+        ],
+        "slug": "facebook-scraping-bot",
+        "note": "Vérifié."
+      },
+      {
+        "id": "resume-website",
+        "title": "Personal Resume Website",
+        "period": "2024",
+        "description": "Professional personal resume website showcasing skills, projects, and experience with modern web design",
+        "technologies": ["HTML", "CSS", "JavaScript", "GitHub Pages", "Responsive Design"],
+        "achievements": [
+          "Clean, professional web design",
+          "Fully responsive layout",
+          "GitHub Pages deployment",
+          "Live site: willlls.github.io"
+        ],
+        "url": "https://willlls.github.io/",
+        "slug": "resume-website",
+        "note": "Vérifié."
+      },
+      {
+        "id": "repairshoes-android-app",
+        "title": "RepairShoes Service Shop Android App",
+        "period": "2023",
+        "description": "Android application for shoe repair service shop with semi-automatic customer messaging based on multiple service types",
+        "technologies": ["Android Development", "Java/Kotlin", "SMS Integration", "Service Management", "Customer Communication"],
+        "achievements": [
+          "Semi-automatic customer messaging system",
+          "Multiple service type management",
+          "Integrated customer communication workflow",
+          "Streamlined shop operations"
+        ],
+        "slug": "repairshoes-android-app",
+        "note": "Vérifié."
+      },
+      {
+        "id": "arduino-task-manager",
+        "title": "Arduino Task Manager with 3D Printing",
+        "period": "2021",
+        "link": "https://forum.arduino.cc/t/resolu-merci-beaucoup-taskme-mon-gestionnaire-de-taches-menageres/701446?page=2",
+        "description": "First Arduino project combining task management system with 3D printing for domestic task organization",
+        "technologies": ["Arduino", "C/C++", "3D Printing", "Task Management", "LCD Display", "Sensors"],
+        "achievements": [
+          "First embedded systems project",
+          "Custom 3D printed components",
+          "Domestic task organization system",
+          "Arduino-based user interface"
+        ],
+        "slug": "arduino-task-manager",
+        "note": "Vérifié."
+      }
+    ]
+  },
+  "instructions": {
+    "purpose": "Ce fichier contient tous les projets actuellement présents sur le site CV",
+    "usage": "Modifiez les données de chaque projet pour qu'elles correspondent à vos vrais projets",
+    "format": "Conservez la même structure JSON mais changez les contenus (titre, description, technologies, achievements, etc.)",
+    "fields_to_verify": [
+      "title - Nom exact du projet",
+      "period - Période réelle du projet",
+      "company - Nom exact de l'entreprise (pour les projets professionnels)",
+      "description - Description précise et réelle",
+      "context - Contexte réel du projet",
+      "technologies - Technologies réellement utilisées",
+      "achievements - Réalisations réelles et mesurables",
+      "url - URLs réelles si elles existent",
+      "responsibilities - Responsabilités réelles",
+      "challenges - Défis réels rencontrés"
+    ],
+    "next_steps": [
+      "1. Modifiez chaque projet avec les vraies données",
+      "2. Supprimez les projets qui n'existent pas",
+      "3. Ajoutez de nouveaux projets si nécessaire",
+      "4. Gardez le même format JSON",
+      "5. Informez-moi quand vous aurez terminé pour que je mette à jour le site"
+    ]
+  }
+}

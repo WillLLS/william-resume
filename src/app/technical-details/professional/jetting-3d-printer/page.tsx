@@ -37,6 +37,47 @@ export default function JettingPrinter() {
         </div>
       </section>
 
+      {/* Project Images */}
+      <section className="py-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden">
+              <img 
+                src="/global_view_jetting_printer.jpg" 
+                alt="Global view of the jetting 3D printer system"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Complete System Overview</h3>
+                <p className="text-sm text-slate-600 dark:text-slate-300">Full view of the integrated jetting 3D printer with all components</p>
+              </div>
+            </div>
+            <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden">
+              <img 
+                src="/printhead_view.jpg" 
+                alt="Detailed view of the printhead mechanism"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Printhead Technology</h3>
+                <p className="text-sm text-slate-600 dark:text-slate-300">Close-up of the innovative 2D ink printhead integration</p>
+              </div>
+            </div>
+            <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden md:col-span-2 lg:col-span-1">
+              <img 
+                src="/printed_result_view.jpg" 
+                alt="Results printed by the jetting 3D printer"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Print Quality Results</h3>
+                <p className="text-sm text-slate-600 dark:text-slate-300">High-precision prints achieved with the jetting technology</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Content */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, Calendar, User, Target, Wrench, CheckCircle, Lightbulb, Instagram, Code } from "lucide-react";
+import { ArrowLeft, Calendar, User, Target, Wrench, Lightbulb, Instagram, Code } from "lucide-react";
 
 export default function InstagramBot() {
   return (
@@ -25,14 +25,31 @@ export default function InstagramBot() {
               <span>Personal Project</span>
               <span className="mx-2">•</span>
               <Calendar className="w-5 h-5" />
-              <span>2020</span>
+              <span>2024</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
-              Instagram Automation Bot
+              Instagram Profile Automation Bot
             </h1>
             <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
-              Advanced Instagram automation system for managing followers, automated interactions, and content engagement with sophisticated anti-detection mechanisms
+              Dual-approach Instagram automation system using browser automation and HTTP request manipulation. Automatique content creation and publication.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Content Example */}
+      <section className="py-12">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden">
+            <img 
+              src="/astro_content.jpg" 
+              alt="Example of automated content created for Instagram"
+              className="w-full h-64 md:h-80 object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">Automated Content Creation</h3>
+              <p className="text-slate-600 dark:text-slate-300">Example of astronomy-themed content automatically generated and published through the automation system</p>
+            </div>
           </div>
         </div>
       </section>
@@ -167,44 +184,6 @@ export default function InstagramBot() {
                     <h3 className="font-semibold text-indigo-800 dark:text-indigo-200 mb-2">Custom Filters</h3>
                     <p className="text-indigo-700 dark:text-indigo-300">Advanced filtering based on follower count, engagement rate, and account age</p>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Results & Performance */}
-            <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-3">
-                <CheckCircle className="w-6 h-6 text-green-600" />
-                Results & Performance Metrics
-              </h2>
-              <div className="grid md:grid-cols-4 gap-6">
-                <div className="text-center">
-                  <div className="bg-pink-100 dark:bg-pink-900/30 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-pink-600">15K+</span>
-                  </div>
-                  <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Followers Gained</h3>
-                  <p className="text-slate-600 dark:text-slate-300">Over 6 months period</p>
-                </div>
-                <div className="text-center">
-                  <div className="bg-blue-100 dark:bg-blue-900/30 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-blue-600">500+</span>
-                  </div>
-                  <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Daily Interactions</h3>
-                  <p className="text-slate-600 dark:text-slate-300">Likes, follows, comments</p>
-                </div>
-                <div className="text-center">
-                  <div className="bg-green-100 dark:bg-green-900/30 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-green-600">95%</span>
-                  </div>
-                  <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Uptime</h3>
-                  <p className="text-slate-600 dark:text-slate-300">Bot reliability</p>
-                </div>
-                <div className="text-center">
-                  <div className="bg-yellow-100 dark:bg-yellow-900/30 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-yellow-600">0</span>
-                  </div>
-                  <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Account Bans</h3>
-                  <p className="text-slate-600 dark:text-slate-300">Safe operation record</p>
                 </div>
               </div>
             </div>

@@ -31,7 +31,7 @@ export default function TelegramCryptoBot() {
               Telegram Cryptocurrency Bot (TON Network)
             </h1>
             <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-6">
-              Advanced Telegram bot for cryptocurrency trending analysis on TON Network with real-time market notifications and comprehensive data tracking
+              Telegram bot for crypto trending on TON Network with hosting and real-time market notifications. Allowing the user to buy a trending place automaticaly from a second bot. All the paiment processus in cryptocurrency was automatic, even the refund system.
             </p>
             <div className="flex justify-center">
               <a 
@@ -43,6 +43,37 @@ export default function TelegramCryptoBot() {
                 <ExternalLink className="w-4 h-4" />
                 Visit Bot: @hunton_live
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Bot Interface Screenshots */}
+      <section className="py-12">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-8 text-center">Bot Interface & Features</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden">
+              <img 
+                src="/hunton_project_list_trending.jpg" 
+                alt="Hunton bot project list and trending interface"
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">Project List & Trending</h3>
+                <p className="text-slate-600 dark:text-slate-300">Interface showing crypto project listings and trending analysis features</p>
+              </div>
+            </div>
+            <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden">
+              <img 
+                src="/hunton_project_trending.jpg" 
+                alt="Hunton bot trending functionality"
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">Trending Analytics</h3>
+                <p className="text-slate-600 dark:text-slate-300">Real-time trending analysis with automatic payment system for placement</p>
+              </div>
             </div>
           </div>
         </div>

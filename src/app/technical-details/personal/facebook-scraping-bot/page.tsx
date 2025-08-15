@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, Calendar, User, Target, Wrench, CheckCircle, Lightbulb, Facebook, Code } from "lucide-react";
+import { ArrowLeft, Calendar, User, Target, Wrench, Lightbulb, Facebook, Code } from "lucide-react";
 
 export default function FacebookBot() {
   return (
@@ -25,14 +25,24 @@ export default function FacebookBot() {
               <span>Personal Project</span>
               <span className="mx-2">•</span>
               <Calendar className="w-5 h-5" />
-              <span>2020</span>
+              <span>2023</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
-              Facebook Automation Bot
+              Facebook Group Posting Automation
             </h1>
-            <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
-              Sophisticated Facebook automation system for managing social interactions, group activities, and content engagement with advanced behavior simulation
+            <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-6">
+              Automated bot for scraping Facebook content and posting to specific groups with intelligent content distribution
             </p>
+            <div className="flex justify-center">
+              <a 
+                href="https://www.facebook.com/DeProverbeEnCitationOfficiel?locale=fr_FR" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+              >
+                View Facebook Page
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -167,44 +177,6 @@ export default function FacebookBot() {
                     <h3 className="font-semibold text-teal-800 dark:text-teal-200 mb-2">Safety Protocols</h3>
                     <p className="text-teal-700 dark:text-teal-300">Built-in limits and monitoring to prevent account restrictions</p>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Results & Performance */}
-            <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-3">
-                <CheckCircle className="w-6 h-6 text-green-600" />
-                Results & Performance Metrics
-              </h2>
-              <div className="grid md:grid-cols-4 gap-6">
-                <div className="text-center">
-                  <div className="bg-blue-100 dark:bg-blue-900/30 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-blue-600">5K+</span>
-                  </div>
-                  <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Friends Added</h3>
-                  <p className="text-slate-600 dark:text-slate-300">Organic network growth</p>
-                </div>
-                <div className="text-center">
-                  <div className="bg-green-100 dark:bg-green-900/30 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-green-600">50+</span>
-                  </div>
-                  <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Groups Managed</h3>
-                  <p className="text-slate-600 dark:text-slate-300">Active group participation</p>
-                  </div>
-                <div className="text-center">
-                  <div className="bg-purple-100 dark:bg-purple-900/30 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-purple-600">1K+</span>
-                  </div>
-                  <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Posts Automated</h3>
-                  <p className="text-slate-600 dark:text-slate-300">Content sharing</p>
-                </div>
-                <div className="text-center">
-                  <div className="bg-yellow-100 dark:bg-yellow-900/30 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-yellow-600">98%</span>
-                  </div>
-                  <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Success Rate</h3>
-                  <p className="text-slate-600 dark:text-slate-300">Action completion</p>
                 </div>
               </div>
             </div>

@@ -87,7 +87,7 @@ export default function ProfessionalProjects() {
       id: "esp32-acoustic-antenna",
       title: "ESP32 Acoustic Antenna System",
       company: "SENSIVIC",
-      period: "2024",
+      period: "2023",
       description: "Advanced acoustic localization system using ESP32 and 4 microphones sampling at 100kHz for sound source positioning",
       context: "Semiconductor shortage solution - migration from STM to ESP32 microcontroller",
       technologies: ["ESP32", "C/C++", "MEMS", "i2s Protocol", "DMA", "ESP-IDF"],

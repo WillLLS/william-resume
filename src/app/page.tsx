@@ -51,7 +51,7 @@ export default function Home() {
                  className="p-3 bg-slate-800 dark:bg-slate-700 text-white rounded-full hover:bg-slate-700 dark:hover:bg-slate-600 transition-colors">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="https://linkedin.com/in/william-lalis" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.linkedin.com/in/william-lalis-90b2531ba/" target="_blank" rel="noopener noreferrer"
                  className="p-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>

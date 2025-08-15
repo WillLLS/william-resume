@@ -7,7 +7,7 @@ export default function PersonalProjects() {
       id: "telegram-crypto-bot",
       title: "Telegram Cryptocurrency Bot (TON Network)",
       period: "2024",
-      description: "Telegram bot for crypto trending on TON Network with hosting and real-time market notifications",
+      description: "Telegram bot for crypto trending on TON Network with hosting and real-time market notifications. Allowing the user to buy a trending place automaticaly from a second bot. All the paiment processus in cryptocurrency was automatic, even the refund system.",
       technologies: ["Python", "Telegram API", "TON Network", "Cryptocurrency APIs", "Hosting", "Real-time Data"],
       achievements: [
         "Successfully deployed on TON Network",
@@ -37,7 +37,7 @@ export default function PersonalProjects() {
       title: "Custom Locksmith Company Website",
       period: "2024",
       description: "Complete custom website development and hosting solution for a professional locksmith company",
-      technologies: ["Web Development", "HTML/CSS", "JavaScript", "Hosting", "Domain Management"],
+      technologies: ["Web Development", "HTML/CSS", "Bootstrap", "JavaScript", "Hosting", "Domain Management"],
       achievements: [
         "Full custom website design and development",
         "Professional hosting setup",
@@ -65,7 +65,7 @@ export default function PersonalProjects() {
       id: "instagram-automation",
       title: "Instagram Profile Automation Bot",
       period: "2024",
-      description: "Dual-approach Instagram automation system using browser automation and HTTP request manipulation",
+      description: "Dual-approach Instagram automation system using browser automation and HTTP request manipulation. Automatique content creation and publication.",
       technologies: ["Python", "Browser Automation", "HTTP Requests", "Reverse Engineering", "Instagram API"],
       achievements: [
         "Two distinct automation approaches implemented",
@@ -78,7 +78,7 @@ export default function PersonalProjects() {
     {
       id: "facebook-scraping-bot",
       title: "Facebook Group Posting Automation",
-      period: "2024",
+      period: "2023",
       description: "Automated bot for scraping Facebook content and posting to specific groups with intelligent content distribution",
       technologies: ["Python", "Web Scraping", "Facebook Automation", "Content Management", "Group Targeting"],
       achievements: [
@@ -87,6 +87,7 @@ export default function PersonalProjects() {
         "Content filtering and distribution",
         "Automated posting scheduling"
       ],
+      url: "https://www.facebook.com/DeProverbeEnCitationOfficiel?locale=fr_FR",
       slug: "facebook-scraping-bot"
     },
     {
@@ -107,7 +108,7 @@ export default function PersonalProjects() {
     {
       id: "repairshoes-android-app",
       title: "RepairShoes Service Shop Android App",
-      period: "2024",
+      period: "2023",
       description: "Android application for shoe repair service shop with semi-automatic customer messaging based on multiple service types",
       technologies: ["Android Development", "Java/Kotlin", "SMS Integration", "Service Management", "Customer Communication"],
       achievements: [
@@ -121,7 +122,7 @@ export default function PersonalProjects() {
     {
       id: "arduino-task-manager",
       title: "Arduino Task Manager with 3D Printing",
-      period: "2024",
+      period: "2021",
       description: "First Arduino project combining task management system with 3D printing for domestic task organization",
       technologies: ["Arduino", "C/C++", "3D Printing", "Task Management", "LCD Display", "Sensors"],
       achievements: [
@@ -130,6 +131,7 @@ export default function PersonalProjects() {
         "Domestic task organization system",
         "Arduino-based user interface"
       ],
+      url: "https://forum.arduino.cc/t/resolu-merci-beaucoup-taskme-mon-gestionnaire-de-taches-menageres/701446?page=2",
       slug: "arduino-task-manager"
     }
   ];

@@ -110,23 +110,23 @@ export default function HealthMonitoring() {
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">Web Dashboard & Alerts</h3>
+                  <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">Data Management & Visualization</h3>
                   <ul className="space-y-2 text-slate-600 dark:text-slate-300">
                     <li className="flex items-start gap-2">
                       <span className="text-emerald-500 mt-1">•</span>
-                      <span>React.js web application for real-time monitoring dashboard</span>
+                      <span>Grafana dashboard connected to database for real-time monitoring</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-emerald-500 mt-1">•</span>
-                      <span>Chart.js for vital signs visualization and trend analysis</span>
+                      <span>MQTT receiver for data collection and processing</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-emerald-500 mt-1">•</span>
-                      <span>Automated alert system via email and SMS notifications</span>
+                      <span>Database integration for sensor data storage</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-emerald-500 mt-1">•</span>
-                      <span>Historical data analysis and health trend reports</span>
+                      <span>Real-time vital signs monitoring and display</span>
                     </li>
                   </ul>
                 </div>
@@ -218,9 +218,9 @@ export default function HealthMonitoring() {
               <div className="grid md:grid-cols-4 gap-4">
                 {[
                   "ESP32", "MAX30102", "DS18B20", "MPU6050",
-                  "React.js", "Firebase", "MQTT", "Chart.js",
-                  "C/C++", "JavaScript", "HTML/CSS", "WiFi",
-                  "Real-time Database", "Push Notifications", "Data Analytics", "IoT Protocols"
+                  "Grafana", "Database", "MQTT", "MQTT Receiver",
+                  "C/C++", "WiFi", "Specialized Sensors", "IoT Protocols",
+                  "Real-time Monitoring", "Data Storage", "Contactless Detection", "Team Leadership"
                 ].map((tech, index) => (
                   <div key={index} className="bg-emerald-50 dark:bg-emerald-900/20 rounded-lg p-3 text-center">
                     <span className="text-emerald-800 dark:text-emerald-200 font-medium">{tech}</span>

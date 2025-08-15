@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, Calendar, GraduationCap, Target, Wrench, CheckCircle, Lightbulb, Leaf, Code } from "lucide-react";
+import { ArrowLeft, Calendar, GraduationCap, Target, Wrench, Lightbulb, Leaf, Code } from "lucide-react";
 
 export default function SmartCompost() {
   return (
@@ -167,83 +167,6 @@ export default function SmartCompost() {
                     <h3 className="font-semibold text-indigo-800 dark:text-indigo-200 mb-2">Remote Monitoring</h3>
                     <p className="text-indigo-700 dark:text-indigo-300">Real-time data visualization and mobile notifications</p>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Composting Process Optimization */}
-            <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-3">
-                <CheckCircle className="w-6 h-6 text-green-600" />
-                Composting Process Stages
-              </h2>
-              <div className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <div className="bg-green-100 dark:bg-green-900/30 rounded-full w-8 h-8 flex items-center justify-center">
-                    <span className="text-green-600 font-bold">1</span>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-slate-900 dark:text-white mb-1">Mesophilic Phase (2-3 days)</h3>
-                    <p className="text-slate-600 dark:text-slate-300">Initial decomposition at 20-40°C with moderate microbial activity</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="bg-green-100 dark:bg-green-900/30 rounded-full w-8 h-8 flex items-center justify-center">
-                    <span className="text-green-600 font-bold">2</span>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-slate-900 dark:text-white mb-1">Thermophilic Phase (1-2 weeks)</h3>
-                    <p className="text-slate-600 dark:text-slate-300">High-temperature decomposition at 55-65°C for pathogen elimination</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="bg-green-100 dark:bg-green-900/30 rounded-full w-8 h-8 flex items-center justify-center">
-                    <span className="text-green-600 font-bold">3</span>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-slate-900 dark:text-white mb-1">Cooling Phase (2-4 weeks)</h3>
-                    <p className="text-slate-600 dark:text-slate-300">Temperature gradual decrease with continued organic matter breakdown</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="bg-green-100 dark:bg-green-900/30 rounded-full w-8 h-8 flex items-center justify-center">
-                    <span className="text-green-600 font-bold">4</span>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-slate-900 dark:text-white mb-1">Maturation Phase (2-6 months)</h3>
-                    <p className="text-slate-600 dark:text-slate-300">Final stabilization and humus formation for ready-to-use compost</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Environmental Impact */}
-            <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-3">
-                <Leaf className="w-6 h-6 text-green-600" />
-                Environmental Benefits & Results
-              </h2>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="text-center">
-                  <div className="bg-green-100 dark:bg-green-900/30 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-green-600">60%</span>
-                  </div>
-                  <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Waste Reduction</h3>
-                  <p className="text-slate-600 dark:text-slate-300">Organic waste volume decrease</p>
-                </div>
-                <div className="text-center">
-                  <div className="bg-blue-100 dark:bg-blue-900/30 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-blue-600">3-4</span>
-                  </div>
-                  <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Weeks Faster</h3>
-                  <p className="text-slate-600 dark:text-slate-300">Compared to traditional composting</p>
-                </div>
-                <div className="text-center">
-                  <div className="bg-purple-100 dark:bg-purple-900/30 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-purple-600">95%</span>
-                  </div>
-                  <h3 className="font-semibold text-slate-900 dark:text-white mb-2">Pathogen Elimination</h3>
-                  <p className="text-slate-600 dark:text-slate-300">Safe compost production</p>
                 </div>
               </div>
             </div>

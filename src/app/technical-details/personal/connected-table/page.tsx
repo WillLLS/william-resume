@@ -1,338 +1,158 @@
-import { ArrowLeft, Calendar, Users, Wifi, Database, Smartphone, Brain } from 'lucide-react';
+import { ArrowLeft, Calendar, User, Target, Wrench, CheckCircle, Code } from 'lucide-react';
 import Link from 'next/link';
 
 export default function ConnectedTablePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800">
       {/* Navigation */}
-      <nav className="bg-white shadow-sm border-b">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4">
-          <Link href="/technical-details/personal" 
-                className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors">
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Personal Projects
-          </Link>
+      <nav className="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-700">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <Link href="/technical-details/personal" className="flex items-center gap-2 text-xl font-bold text-slate-900 dark:text-white">
+              <ArrowLeft className="w-5 h-5" />
+              IoT Connected Smart Table
+            </Link>
+          </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+      <section className="pt-20 pb-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Connected Table
+            <div className="flex items-center justify-center gap-2 text-blue-600 dark:text-blue-400 mb-4">
+              <User className="w-5 h-5" />
+              <span>Personal Project</span>
+              <span className="mx-2">•</span>
+              <Calendar className="w-5 h-5" />
+              <span>2024</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
+              IoT Connected Smart Table
             </h1>
-            <p className="text-xl text-gray-600 mb-6">
-              IoT Smart Table with Integrated Connectivity and User Management
+            <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
+              Smart interactive table with WiFi-controlled LEDs, Spotify integration, and environmental monitoring display
             </p>
-            <div className="flex items-center justify-center space-x-6 text-sm text-gray-500">
-              <div className="flex items-center">
-                <Calendar className="w-4 h-4 mr-1" />
-                <span>2023</span>
-              </div>
-              <div className="flex items-center">
-                <Users className="w-4 h-4 mr-1" />
-                <span>Personal Project</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Technical Implementation */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Technical Implementation</h2>
-          
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="flex items-center mb-4">
-                <Wifi className="w-6 h-6 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold text-gray-900">Connectivity System</h3>
-              </div>
-              <p className="text-gray-700 mb-4">
-                Developed a comprehensive connectivity solution integrating multiple wireless protocols 
-                for seamless device communication and user interaction management.
-              </p>
-              <div className="space-y-2">
-                <div className="flex items-center text-sm text-gray-600">
-                  <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                  Wi-Fi 802.11ac integration
-                </div>
-                <div className="flex items-center text-sm text-gray-600">
-                  <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                  Bluetooth Low Energy (BLE) 5.0
-                </div>
-                <div className="flex items-center text-sm text-gray-600">
-                  <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                  NFC proximity detection
-                </div>
-                <div className="flex items-center text-sm text-gray-600">
-                  <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                  Real-time data synchronization
-                </div>
-              </div>
-            </div>
+      {/* Content */}
+      <section className="py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-12">
 
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="flex items-center mb-4">
-                <Database className="w-6 h-6 text-green-600 mr-3" />
-                <h3 className="text-xl font-semibold text-gray-900">Data Management</h3>
-              </div>
-              <p className="text-gray-700 mb-4">
-                Implemented a robust data management system with secure storage, real-time processing, 
-                and intelligent analytics for user behavior and device optimization.
-              </p>
-              <div className="space-y-2">
-                <div className="flex items-center text-sm text-gray-600">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                  SQLite local database
-                </div>
-                <div className="flex items-center text-sm text-gray-600">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                  Cloud synchronization (Firebase)
-                </div>
-                <div className="flex items-center text-sm text-gray-600">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                  User session management
-                </div>
-                <div className="flex items-center text-sm text-gray-600">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                  Encrypted data transmission
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-white p-8 rounded-lg shadow-sm">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Architecture Overview</h3>
-            <div className="prose max-w-none text-gray-700">
-              <p className="mb-4">
-                The Connected Table represents a sophisticated IoT solution that bridges physical and 
-                digital interactions. The system architecture is built around a central ESP32 
-                microcontroller that manages multiple communication protocols and sensors.
-              </p>
-              <p className="mb-4">
-                <strong>Core Components:</strong> The table integrates pressure sensors for surface 
-                interaction detection, proximity sensors for user presence, and environmental sensors 
-                for ambient conditions. A central processing unit manages all data flows and 
-                communication protocols.
-              </p>
-              <p>
-                <strong>Smart Features:</strong> The table can detect user presence, adapt lighting and 
-                temperature, manage connected devices, and provide personalized experiences based on 
-                user profiles and interaction patterns.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Results & Impact */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Results & Impact</h2>
-          
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Smartphone className="w-8 h-8 text-blue-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Multi-Device Support</h3>
-              <p className="text-gray-600">Seamless integration with smartphones, tablets, and laptops</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Brain className="w-8 h-8 text-green-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Intelligent Learning</h3>
-              <p className="text-gray-600">Adaptive behavior based on usage patterns and preferences</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-8 h-8 text-purple-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Multi-User Management</h3>
-              <p className="text-gray-600">Individual profiles and personalized experiences</p>
-            </div>
-          </div>
-
-          <div className="bg-gray-50 p-8 rounded-lg">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Key Achievements</h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-3">Technical Milestones</h4>
-                <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    Real-time multi-protocol communication system
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    Advanced sensor fusion algorithms
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    Secure authentication and data encryption
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    Cross-platform mobile application
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-3">Innovation Impact</h4>
-                <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    Enhanced workspace productivity
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    Intuitive human-computer interaction
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    Personalized smart environment
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    Energy-efficient operation
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Technologies Used */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Technologies Used</h2>
-          
-          <div className="grid md:grid-cols-4 gap-6">
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <div className="text-2xl mb-2">🔧</div>
-              <h3 className="font-semibold text-gray-900 mb-2">Hardware</h3>
-              <ul className="text-sm text-gray-600 space-y-1">
-                <li>ESP32-WROOM-32</li>
-                <li>Pressure sensors</li>
-                <li>NFC module</li>
-                <li>LED strips</li>
-              </ul>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <div className="text-2xl mb-2">💻</div>
-              <h3 className="font-semibold text-gray-900 mb-2">Firmware</h3>
-              <ul className="text-sm text-gray-600 space-y-1">
-                <li>Arduino IDE</li>
-                <li>FreeRTOS</li>
-                <li>ESP-IDF</li>
-                <li>C/C++</li>
-              </ul>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <div className="text-2xl mb-2">📱</div>
-              <h3 className="font-semibold text-gray-900 mb-2">Mobile App</h3>
-              <ul className="text-sm text-gray-600 space-y-1">
-                <li>React Native</li>
-                <li>Expo</li>
-                <li>AsyncStorage</li>
-                <li>Bluetooth API</li>
-              </ul>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <div className="text-2xl mb-2">☁️</div>
-              <h3 className="font-semibold text-gray-900 mb-2">Backend</h3>
-              <ul className="text-sm text-gray-600 space-y-1">
-                <li>Firebase</li>
-                <li>Node.js</li>
-                <li>WebSocket</li>
-                <li>MQTT</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Challenges & Solutions */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Challenges & Solutions</h2>
-          
-          <div className="space-y-8">
-            <div className="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg">
-              <h3 className="text-lg font-semibold text-red-800 mb-2">Challenge: Multi-Protocol Communication</h3>
-              <p className="text-red-700 mb-4">
-                Managing simultaneous Wi-Fi, Bluetooth, and NFC communications without interference 
-                while maintaining stable connections and optimal power consumption.
-              </p>
-              <div className="bg-green-50 border border-green-200 p-4 rounded-lg">
-                <h4 className="text-green-800 font-semibold mb-2">Solution</h4>
-                <p className="text-green-700">
-                  Implemented a sophisticated task scheduler using FreeRTOS with priority-based 
-                  communication protocol switching, dynamic power management, and interference 
-                  detection algorithms that automatically adjust transmission parameters.
+            {/* Project Overview */}
+            <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8">
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-3">
+                <Target className="w-6 h-6 text-blue-600" />
+                Project Overview
+              </h2>
+              <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6">
+                <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
+                  A smart module that attaches to a coffee table, providing LED lighting control, environmental monitoring, 
+                  web-based remote control, and Spotify integration - all in a compact, custom-designed enclosure.
+                </p>
+                <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
+                  This IoT project combines hardware design, embedded programming, and web development to create 
+                  an interactive coffee table enhancement with practical smart home features.
                 </p>
               </div>
             </div>
 
-            <div className="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg">
-              <h3 className="text-lg font-semibold text-red-800 mb-2">Challenge: User Recognition & Privacy</h3>
-              <p className="text-red-700 mb-4">
-                Accurately identifying users while respecting privacy concerns and ensuring secure 
-                data handling without compromising the user experience.
-              </p>
-              <div className="bg-green-50 border border-green-200 p-4 rounded-lg">
-                <h4 className="text-green-800 font-semibold mb-2">Solution</h4>
-                <p className="text-green-700">
-                  Developed a multi-factor authentication system combining NFC proximity, device 
-                  MAC address filtering, and behavioral pattern recognition with end-to-end 
-                  encryption and local data processing to maintain privacy.
-                </p>
+            {/* Key Features */}
+            <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8">
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-3">
+                <Wrench className="w-6 h-6 text-blue-600" />
+                Key Features
+              </h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 mt-0.5" />
+                    <span className="text-slate-700 dark:text-slate-300">LED strip control under the table</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 mt-0.5" />
+                    <span className="text-slate-700 dark:text-slate-300">Temperature & humidity display (2x16 LCD)</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 mt-0.5" />
+                    <span className="text-slate-700 dark:text-slate-300">Web server for remote LED control</span>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 mt-0.5" />
+                    <span className="text-slate-700 dark:text-slate-300">Spotify controls (play/pause/next/previous/volume)</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 mt-0.5" />
+                    <span className="text-slate-700 dark:text-slate-300">Custom 3D printed enclosure</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 mt-0.5" />
+                    <span className="text-slate-700 dark:text-slate-300">Custom electronic board design</span>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg">
-              <h3 className="text-lg font-semibold text-red-800 mb-2">Challenge: Real-Time Responsiveness</h3>
-              <p className="text-red-700 mb-4">
-                Ensuring immediate response to user interactions while processing multiple sensor 
-                inputs, managing device connections, and maintaining system stability.
-              </p>
-              <div className="bg-green-50 border border-green-200 p-4 rounded-lg">
-                <h4 className="text-green-800 font-semibold mb-2">Solution</h4>
-                <p className="text-green-700">
-                  Optimized sensor polling rates, implemented interrupt-driven event handling, 
-                  and created a priority queue system for critical operations with predictive 
-                  caching to minimize response latency.
-                </p>
+            {/* Technologies Used */}
+            <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8">
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-3">
+                <Code className="w-6 h-6 text-blue-600" />
+                Technologies & Tools
+              </h2>
+              <div className="grid md:grid-cols-4 gap-4">
+                {[
+                  "ESP32", "Arduino", "WiFi", "Spotify API",
+                  "LCD Display", "LED Control", "3D Printing", "Environmental Sensors"
+                ].map((tech, index) => (
+                  <div key={index} className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-3 text-center">
+                    <span className="text-blue-800 dark:text-blue-200 font-medium">{tech}</span>
+                  </div>
+                ))}
               </div>
             </div>
+
+            {/* Project Achievements */}
+            <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8">
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-3">
+                <CheckCircle className="w-6 h-6 text-green-600" />
+                Project Achievements
+              </h2>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-green-500 mt-0.5" />
+                  <span className="text-slate-700 dark:text-slate-300">Custom electronic board design</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-green-500 mt-0.5" />
+                  <span className="text-slate-700 dark:text-slate-300">Spotify API integration with physical buttons</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-green-500 mt-0.5" />
+                  <span className="text-slate-700 dark:text-slate-300">Real-time humidity & temperature display</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-green-500 mt-0.5" />
+                  <span className="text-slate-700 dark:text-slate-300">Custom 3D printed enclosure</span>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
 
-      {/* Navigation */}
-      <section className="py-8 bg-gray-50 border-t">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <div className="flex justify-between items-center">
-            <Link href="/technical-details/personal" 
-                  className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Personal Projects
-            </Link>
-            <Link href="/technical-details" 
-                  className="text-gray-600 hover:text-gray-800 transition-colors">
-              View All Projects
-            </Link>
-          </div>
+      {/* Back Navigation */}
+      <section className="py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <Link href="/technical-details/personal" className="inline-flex items-center gap-2 bg-slate-600 text-white px-6 py-3 rounded-lg hover:bg-slate-700 transition-colors">
+            <ArrowLeft className="w-4 h-4" />
+            Back to Personal Projects
+          </Link>
         </div>
       </section>
     </div>
