@@ -1,72 +1,161 @@
-William Lalis  
-Embedded Systems & IoT Engineer | Python | C/C++ | SaaS-Oriented Mindset  
-Based in Hamburg, Germany | French & EU citizen | Open to relocation or remote  
-GitHub: github.com/willLLS | Email: lalis.william@gmail.com | Phone: +33 7 69 65 24 10  
+William Lalis
+Embedded Systems & IoT Engineer | Python & C/C++ Developer
+French & EU citizen | Open to relocation or remote
+Email: lalis.william@gmail.com | Phone: +33 7 69 65 24 10
 
-PROFILE  
-French embedded systems engineer with a solid background in C/C++, Python, and IoT development.  
-Passionate about building software and hardware interfaces, with professional experience in firmware development, API integration, and prototyping.  
-Looking for a full-time opportunity in Hamburg (or remote) within a company that develops and markets SaaS products, to grow both technically and strategically.  
+PROFILE
 
-SKILLS  
+French engineer specialized in Embedded Systems, IoT, and Python development, with a strong track record in firmware engineering, API integrations, and proof-of-concept prototyping.
+Combines hardware expertise with high-level software development, from low-level C/C++ to backend hosted solutions.
+Looking for a role in Hamburg or remote within an innovative company developing and scaling technology products, where I can contribute to both technical excellence and product strategy.
 
-Embedded Systems & IoT:  
-• Embedded Firmware Development (ESP-IDF, C/C++)  
-• Real-Time Operating Systems (FreeRTOS)  
-• IoT Sensor Integration (ESP32, Raspberry Pi, peripherals)  
-• Low-Power Wireless Communication (LoRa, Wi-Fi, BLE)  
+SKILLS
 
-Programming & Scripting:  
-• Languages: C, C++, Python, HTML/CSS/JS, SQL, Bash  
-• Web Scraping & Automation: Selenium, BeautifulSoup, Scrapy  
-• Machine Learning: PyTorch, R  
-• API Development & Consumption: RESTful APIs  
+Embedded Systems & IoT
 
-Web & Server Management:  
-• Web Servers: Nginx, Gunicorn, Flask, Systemd  
-• VPS & Linux Server Administration  
+Embedded Firmware Development (ESP-IDF, C/C++)
 
-CAD & Tools:  
-• Fusion 360, EasyEDA (PCB Design), 3D Printing Maintenance & Calibration  
-• Version Control: Git, GitHub  
+Real-Time Operating Systems (FreeRTOS)
 
-PROFESSIONAL EXPERIENCE  
+IoT Sensor Integration (ESP32, Raspberry Pi, peripherals)
 
-R&D&I Engineer – SYMPHONY 3D  
-2023 – 2024 | Full-time  
-• Led end-to-end development of embedded IoT solutions, from hardware integration to firmware deployment (ESP32, FreeRTOS)  
-• Designed and deployed reliable server communication protocols for remote 3D printer control  
-• Engineered a novel proof-of-concept for jetting-based 3D printing, enabling micro-precision material deposition  
-• Built robust pipelines for sensor data acquisition and preprocessing to train custom deep learning models (PyTorch)  
+Low-Power Wireless Communication (LoRa, Wi-Fi, BLE)
 
-R&D Engineer Intern – SENSIVIC  
-2022  
-• Developed real-time embedded firmware for high-frequency acoustic detection systems using ESP32 and C++  
+Programming & Development
 
-Consultant – Technicatome  
-2024 – Coordination & Development missions  
-• Coordinated technical support operations: prioritized tickets, optimized planning, and improved SLA performance  
-• Developed a secure Python API for automated software signing using a Hardware Security Module (HSM)  
-• Integrated HSM-based signature workflows into CI/CD pipelines for high-assurance software deployment  
+Languages: C, C++, Python, HTML/CSS/JS, SQL, Bash
 
-EDUCATION  
+Web Automation & Scraping (Selenium, BeautifulSoup, Scrapy)
 
-Master of Science – Internet of Things (Data Science)  
-École de l’IoT – Orléans, France | 2023  
+Machine Learning & Data Science (PyTorch, R)
 
-Engineering Degree – Embedded Systems & Applied Physics  
-Polytech Orléans – France | 2023  
+API Development & Integration (RESTful APIs, Web3 APIs)
 
-Erasmus+ – Computer Science  
-Università degli Studi dell’Aquila – Italy | 2022  
+Networking
 
-CPGE – Classe Prépa PC*  
-Lycée Victor Hugo – Caen, France | 2020  
+OSI Model & TCP/IP Stack
 
-French Baccalauréat – Physics & Chemistry, Music (Honors)  
-Lycée Guillaume le Conquérant – France | 2017  
+Protocols: TCP, UDP, HTTP, HTTPS, WebSocket
 
-LANGUAGES  
-• French – Native  
-• English – Fluent (C1)  
+Network Troubleshooting & Packet Analysis (Wireshark)
 
+IP Addressing, Subnetting, and Routing Basics
+
+Web & Server Management
+
+Web Servers: Nginx, Gunicorn, Flask, Systemd
+
+VPS & Linux Administration
+
+SaaS product deployment & backend integration
+
+CAD & Tools
+
+Fusion 360, EasyEDA (PCB Design), 3D Printing Maintenance & Calibration
+
+Git, GitHub, Docker, Virtual Environments (Python)
+
+PROFESSIONAL EXPERIENCE
+
+Consultant – Technicatome
+2025 – Present | Developer
+
+Project 1 – Secure Binary Signing API (Autonomous, project owner)
+
+Designed and developed a Flask-based API for binary signing using a Hardware Security Module (HSM) and PKCS#11
+
+Built a secure SQL database and deployed the solution in a closed, secure network
+
+Proposed and implemented system architecture using Nginx, Gunicorn, and Flask
+
+Produced full technical documentation for deployment and maintenance
+
+Project 2 – PyQt Graphical Interface for Actuator Module Testing (Autonomous, project owner)
+
+Developed a PyQt application for actuator module acceptance testing
+
+Implemented Modbus protocol for broadcast/unicast command sending
+
+Designed a manual frame editing interface for advanced control operations
+
+2024 – 2025 | Coordination & Development
+
+Coordinated technical support operations, improving SLA performance and ticket resolution workflow
+
+Developed a secure Python API for automated software signing with HSM integration
+
+Integrated HSM workflows into CI/CD pipelines for high-assurance software delivery
+
+Freelance Developer
+2023 – Present
+
+Built SaaS-oriented Telegram bots for automation, subscription management, and API-based services
+
+Developed crypto trading tools (Solana, Helius API) for token monitoring and automated sniping
+
+Delivered custom Python automation scripts and scraping solutions for clients
+
+R&D&I Engineer – SYMPHONY 3D
+2023 – 2024 | Full-time
+
+Designed and implemented embedded IoT solutions from hardware integration to firmware deployment (ESP32, FreeRTOS)
+
+Built server communication protocols enabling remote 3D printer monitoring & control
+
+Engineered a proof-of-concept for micro-precision material jetting in 3D printing
+
+Developed pipelines for sensor data acquisition and preprocessing to train deep learning models (PyTorch)
+
+R&D Engineer Intern – SENSIVIC
+2022
+
+Created real-time embedded firmware for high-frequency acoustic detection systems (ESP32, C++)
+
+Other Work Experience - Not engineering related
+
+Bar Assistant – Local Bar-Tabac
+June 2021 – Dec 2021
+
+Managed bar operations, including drink preparation and service
+
+Welcomed and seated customers, ensuring a positive guest experience
+
+Maintained cleanliness and organization of the bar area
+
+Handled customer payments and transactions
+
+Sales & Repair Assistant – La Cordonnerie
+Summer 2019 & Summer 2020
+
+Performed shoe and leather goods repairs (stitching, sole replacement, handbag restoration)
+
+Provided key duplication services with precision and quality control
+
+Managed supplier orders and inventory follow-up
+
+Welcomed and assisted customers, ensuring personalized service and issue resolution
+
+Seasonal Worker – Swimming Pool Staff (Summer 2018)
+
+EDUCATION
+
+Master of Science – Internet of Things (Data Science)
+École de l’IoT – Orléans, France | 2023
+
+Engineering Degree – Embedded Systems & Applied Physics
+Polytech Orléans – France | 2023
+
+Erasmus+ – Computer Science
+Università degli Studi dell’Aquila – Italy | 2022
+
+CPGE – Classe Prépa PC*
+Lycée Victor Hugo – Caen, France | 2020
+
+French Baccalauréat – Physics & Chemistry, Music (Honors)
+Lycée Guillaume le Conquérant – France | 2017
+
+LANGUAGES
+
+French – Native
+
+English – Fluent (C1)
