@@ -126,7 +126,7 @@ const translations = {
     'education.master.school': 'École de l\'IoT - Orléans, France',
     'education.master.watchVideo': 'Watch Video',
     'education.master.videoTitle': 'École de l\'IoT Presentation',
-    'education.engineering.title': 'Engineering Degree - Embedded Systems & Applied Physics',
+    'education.engineering.title': 'Engineering Degree - Physical Engineering & Embedded Systems',
     'education.engineering.school': 'Polytech Orléans - France',
     'education.erasmus.title': 'Erasmus+ - Computer Science',
     'education.erasmus.school': 'Università degli Studi dell\'Aquila - Italy',
@@ -249,7 +249,7 @@ const translations = {
     'education.master.school': 'École de l\'IoT - Orléans, France',
     'education.master.watchVideo': 'Regarder la vidéo',
     'education.master.videoTitle': 'Présentation de l\'École de l\'IoT',
-    'education.engineering.title': 'Diplôme d\'Ingénieur - Systèmes Embarqués & Physique Appliquée',
+    'education.engineering.title': 'Diplôme d\'Ingénieur - Génie Physique et Systèmes Embarqués',
     'education.engineering.school': 'Polytech Orléans - France',
     'education.erasmus.title': 'Erasmus+ - Informatique',
     'education.erasmus.school': 'Università degli Studi dell\'Aquila - Italie',
@@ -372,7 +372,7 @@ const translations = {
     'education.master.school': 'École de l\'IoT - Orléans, Frankreich',
     'education.master.watchVideo': 'Video ansehen',
     'education.master.videoTitle': 'École de l\'IoT Präsentation',
-    'education.engineering.title': 'Ingenieurabschluss - Embedded Systems & Angewandte Physik',
+    'education.engineering.title': 'Ingenieurabschluss - Physikalische Technik & Embedded Systems',
     'education.engineering.school': 'Polytech Orléans - Frankreich',
     'education.erasmus.title': 'Erasmus+ - Informatik',
     'education.erasmus.school': 'Università degli Studi dell\'Aquila - Italien',
@@ -495,7 +495,7 @@ const translations = {
     'education.master.school': 'École de l\'IoT - Orléans, Francia',
     'education.master.watchVideo': 'Guarda il video',
     'education.master.videoTitle': 'Presentazione École de l\'IoT',
-    'education.engineering.title': 'Laurea in Ingegneria - Sistemi Embedded & Fisica Applicata',
+    'education.engineering.title': 'Laurea in Ingegneria - Ingegneria Fisica e Sistemi Embedded',
     'education.engineering.school': 'Polytech Orléans - Francia',
     'education.erasmus.title': 'Erasmus+ - Informatica',
     'education.erasmus.school': 'Università degli Studi dell\'Aquila - Italia',
@@ -522,7 +522,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
   const [currentLanguage, setCurrentLanguage] = useState<Language>('en');
 
   useEffect(() => {
-    // Check for saved language preference or browser language
+    // Check for saved language preference
     const savedLanguage = localStorage.getItem('preferred-language') as Language;
     if (savedLanguage && ['en', 'fr', 'de', 'it'].includes(savedLanguage)) {
       setCurrentLanguage(savedLanguage);
@@ -531,6 +531,11 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
       const browserLang = navigator.language.split('-')[0] as Language;
       if (['en', 'fr', 'de', 'it'].includes(browserLang)) {
         setCurrentLanguage(browserLang);
+        localStorage.setItem('preferred-language', browserLang);
+      } else {
+        // Default to English if browser language is not supported
+        setCurrentLanguage('en');
+        localStorage.setItem('preferred-language', 'en');
       }
     }
   }, []);
